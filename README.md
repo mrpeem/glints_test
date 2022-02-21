@@ -1,6 +1,7 @@
 # glints_test
 
 To run from Heroku, the url = <a href>https://peem-glints-test.herokuapp.com/</a>
+<br><br>
 To run set up and run locally: 
 1) Start by creating the database. From this directory, do the following commands <br>
   <code> $ cd src/database/ </code><br>
