@@ -1,5 +1,6 @@
 # glints_test
 
+To run from Heroku, the url = <a href>https://peem-glints-test.herokuapp.com/</a>
 To run set up and run locally: 
 1) Start by creating the database. From this directory, do the following commands <br>
   <code> $ cd src/database/ </code><br>
@@ -56,7 +57,7 @@ Here is how to test each of the functionalities specified in the requirements:
     - [term] = string. The term to search for.
   - returns a string array of restaurants with restaurants that contain the term as part of its substring. The result will be sorted by relevance using npm's <code>string-similarity</code> package, which uses Dice's Coefficient to determine similarity
   - example cURL command: <br>
-    - <code>$ curl -X POST "http://localhost:3000/search/restaurant" -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -d '{"term": "bird"}'</code>
+    - <code>$ curl -X POST "https://peem-glints-test.herokuapp.com/search/restaurant" -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -d '{"term": "bird"}'</code>
 
 <br><br>
 4) Search for dishes by name, ranked by relevance to search term
@@ -81,8 +82,9 @@ Here is how to test each of the functionalities specified in the requirements:
     - [receipt] is an object that contains the transaction history of the order
   - example cURL command: <br>
     - if manually specifying date: <code>$ curl -X POST "http://localhost:3000/order" -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -d '{ "dishName": "Chocoladen Crem","restaurantName": "Sullivan'\''s Steakhouse - Leawood", "id": 13, "transactionDate": "02/21/2022 12 AM" }'</code>
-    - not specifying date: <code>curl -X POST "http://localhost:3000/ype: application/json' -d '{ "dishName": "Boiled Fowl","restaurantName": "8th Street at the Ivy", "id": 25 }'</code>
+    - not specifying date: <code> curl -X POST "https://peem-glints-test.herokuapp.com/order" -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -d '{ "dishName": "Boiled Fowl","restaurantName": "8th Street at the Ivy", "id": 20 }' </code>
   - possible error return values:
+  
     - Message notifying that the restaurant is not open
     - Message notifying that the user's cash balance is inadequate to make the purchase
     - Message notifying that the restaurant does not serve that dish (incorrect dishName/restaurantName combination)
