@@ -1,0 +1,31 @@
+{
+  "name": "glints_test",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "jest": "^27.5.1",
+    "request": "^2.88.2",
+    "sqlite3": "^5.0.2",
+    "string-similarity": "^4.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "start": "node src/server"
+  },
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrpeem/glints_test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrpeem/glints_test/issues"
+  },
+  "homepage": "https://github.com/mrpeem/glints_test#readme"
+}
